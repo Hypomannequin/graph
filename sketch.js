@@ -271,9 +271,14 @@ function drawButtons(){
 function setup() {
   WINDOW_WIDTH = windowWidth;
   WINDOW_HEIGHT = windowHeight;
+  GRAPH_WIDTH = WINDOW_WIDTH-100;
+  GRAPH_HEIGHT = WINDOW_HEIGHT- 100;
+  GRAPH_OFFSET_X = 50;
+  GRAPH_OFFSET_Y = WINDOW_HEIGHT- 50;
+
   smooth();
   lastMillis = millis();
-  createCanvas(1600, 900);
+  createCanvas(WINDOW_WIDTH, WINDOW_HEIGHT );
   loadData();
   textFont(fontLight);
   maxFreq = ceil(maxFreq/500) *500;
