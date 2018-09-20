@@ -9,8 +9,8 @@ var postFrequency = [];
 var commentFrequency = [];
 var likeFrequency = [];
 
-var WINDOW_WIDTH = windowWidth;
-var WINDOW_HEIGHT = windowHeight;
+var WINDOW_WIDTH;
+var WINDOW_HEIGHT;
 var GRAPH_WIDTH = WINDOW_WIDTH-100;
 var GRAPH_HEIGHT = WINDOW_HEIGHT- 100;
 var GRAPH_OFFSET_X = 50;
@@ -269,6 +269,8 @@ function drawButtons(){
 }
 
 function setup() {
+  WINDOW_WIDTH = windowWidth;
+  WINDOW_HEIGHT = windowHeight;
   smooth();
   lastMillis = millis();
   createCanvas(1600, 900);
