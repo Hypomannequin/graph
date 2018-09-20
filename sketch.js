@@ -9,8 +9,8 @@ var postFrequency = [];
 var commentFrequency = [];
 var likeFrequency = [];
 
-var WINDOW_WIDTH = 1600;
-var WINDOW_HEIGHT = 900;
+var WINDOW_WIDTH = windowWidth;
+var WINDOW_HEIGHT = windowHeight;
 var GRAPH_WIDTH = WINDOW_WIDTH-100;
 var GRAPH_HEIGHT = WINDOW_HEIGHT- 100;
 var GRAPH_OFFSET_X = 50;
@@ -70,8 +70,8 @@ var fontLight;
 
 function preload() {
 
-  fontLight = loadFont('/fonts/MartelSans-ExtraLight.ttf');
-  data = loadJSON('/processedData.json');
+  fontLight = loadFont('fonts/MartelSans-ExtraLight.ttf');
+  data = loadJSON('processedData.json');
 }
 
 function loadData(){
