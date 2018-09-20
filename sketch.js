@@ -50,6 +50,8 @@ var graphStates = {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  WINDOW_WIDTH = windowWidth;
+  WINDOW_HEIGHT = windowHeight;
    GRAPH_WIDTH = WINDOW_WIDTH-100;
    GRAPH_HEIGHT = WINDOW_HEIGHT- 100;
    GRAPH_OFFSET_X = 50;
