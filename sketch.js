@@ -48,6 +48,14 @@ var graphStates = {
   TRANSITION: 2
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+   GRAPH_WIDTH = WINDOW_WIDTH-100;
+   GRAPH_HEIGHT = WINDOW_HEIGHT- 100;
+   GRAPH_OFFSET_X = 50;
+   GRAPH_OFFSET_Y = WINDOW_HEIGHT- 50;
+}
+
 var currentGraphState = 0;
 
 var mouseIndex = -1;
