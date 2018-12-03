@@ -236,6 +236,12 @@ function keyPressed() {
   }
 }
 
+function mouseClicked() {
+  if (mouseIndex != -1) {
+    switchGraph();
+  }
+}
+
 function drawHoverLine() {
   
   var spacing = (GRAPH_WIDTH)/ (messageReceivedFrequency.length -1);
